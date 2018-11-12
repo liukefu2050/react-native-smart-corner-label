@@ -11,6 +11,7 @@ import React, {
 import {
     StyleSheet,
     View,
+    ViewPropTypes,
     Text,
 } from 'react-native'
 import PropTypes from 'prop-types';
@@ -39,7 +40,7 @@ export default class CornerLabel extends Component {
     }
 
     static propTypes = {
-        style: View.propTypes.style,
+        style: ViewPropTypes.propTypes.style,
         textStyle: Text.propTypes.style,
         cornerRadius: PropTypes.number.isRequired,
         alignment: PropTypes.oneOf([
